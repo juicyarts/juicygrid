@@ -1,0 +1,220 @@
+Dez 16, 2015 8:45:24 PM org.openqa.grid.selenium.GridLauncher main
+INFORMATION: Launching a standalone server
+1 [main] INFO org.openqa.selenium.server.SeleniumServer - Java: Oracle Corporation 25.60-b23
+1 [main] INFO org.openqa.selenium.server.SeleniumServer - OS: Mac OS X 10.11.1 x86_64
+12 [main] INFO org.openqa.selenium.server.SeleniumServer - v2.20.0, with Core v2.20.0. Built from revision 16008
+242 [main] INFO org.openqa.selenium.server.SeleniumServer - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+246 [main] INFO org.openqa.jetty.http.HttpServer - Version Jetty/5.1.x
+249 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/selenium-server,/selenium-server]
+297 [main] INFO org.openqa.jetty.util.Container - Started org.openqa.jetty.jetty.servlet.ServletHandler@25618e91
+297 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/wd,/wd]
+297 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+297 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/,/]
+304 [main] INFO org.openqa.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
+304 [main] INFO org.openqa.jetty.util.Container - Started org.openqa.jetty.jetty.Server@76fb509a
+20:45:25.476 INFO - Executing: [new session: {acceptSslCerts=true, name=Sass Test, browserName=firefox, javascriptEnabled=true, platform=ANY}] at URL: /session)
+org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host localhost on port 7055 after 45000 ms. Firefox console output:
+kipping unavailable install location app-system-share
+1450295134351	addons.xpi	INFO	Mapping web2pdfextension@web2pdf.adobedotcom to /Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom
+1450295134352	addons.xpi	DEBUG	checkForChanges
+1450295134352	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134353	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1450295134354	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134360	addons.xpi	DEBUG	No changes found
+1450295134397	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1450295134398	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1450295134398	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1450295134399	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1450295134401	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1450295134402	addons.manager	DEBUG	Starting provider: GMPProvider
+1450295134412	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1450295134413	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1450295134413	addons.manager	DEBUG	Starting provider: PluginProvider
+1450295134414	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1450295134414	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1450295134414	addons.manager	DEBUG	Completed startup sequence
+1450295134537	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions.json
+1450295134961	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1450295135237	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1450295135237	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1450295135238	addons.xpi-utils	DEBUG	Successfully read XPI database
+1450295135484	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript warning: https://self-repair.mozilla.org/de/repair/, line 8: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:187)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:93)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:92)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.callConstructor(DefaultDriverFactory.java:63)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:57)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:177)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+20:46:18.779 WARN - Exception thrown
+java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
+Build info: version: '2.20.0', revision: '16008', time: '2012-02-27 19:03:04'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.1', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.openqa.selenium.remote.server.DefaultSession.execute(DefaultSession.java:139)
+	at org.openqa.selenium.remote.server.DefaultSession.<init>(DefaultSession.java:108)
+	at org.openqa.selenium.remote.server.DefaultSession.createSession(DefaultSession.java:86)
+	at org.openqa.selenium.remote.server.DefaultDriverSessions.newSession(DefaultDriverSessions.java:87)
+	at org.openqa.selenium.remote.server.handler.NewSession.handle(NewSession.java:62)
+	at org.openqa.selenium.remote.server.rest.ResultConfig.handle(ResultConfig.java:196)
+	at org.openqa.selenium.remote.server.DriverServlet.handleRequest(DriverServlet.java:580)
+	at org.openqa.selenium.remote.server.DriverServlet.doPost(DriverServlet.java:531)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.openqa.selenium.remote.server.DriverServlet.service(DriverServlet.java:503)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.openqa.jetty.jetty.servlet.ServletHolder.handle(ServletHolder.java:428)
+	at org.openqa.jetty.jetty.servlet.ServletHandler.dispatch(ServletHandler.java:677)
+	at org.openqa.jetty.jetty.servlet.ServletHandler.handle(ServletHandler.java:568)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1530)
+	at org.openqa.jetty.http.HttpContext.handle(HttpContext.java:1482)
+	at org.openqa.jetty.http.HttpServer.service(HttpServer.java:909)
+	at org.openqa.jetty.http.HttpConnection.service(HttpConnection.java:820)
+	at org.openqa.jetty.http.HttpConnection.handleNext(HttpConnection.java:986)
+	at org.openqa.jetty.http.HttpConnection.handle(HttpConnection.java:837)
+	at org.openqa.jetty.http.SocketListener.handleConnection(SocketListener.java:243)
+	at org.openqa.jetty.util.ThreadedServer.handle(ThreadedServer.java:357)
+	at org.openqa.jetty.util.ThreadPool$PoolThread.run(ThreadPool.java:534)
+Caused by: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
+Build info: version: '2.20.0', revision: '16008', time: '2012-02-27 19:03:04'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.1', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.callConstructor(DefaultDriverFactory.java:73)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:57)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:177)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.callConstructor(DefaultDriverFactory.java:63)
+	... 7 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+kipping unavailable install location app-system-share
+1450295134351	addons.xpi	INFO	Mapping web2pdfextension@web2pdf.adobedotcom to /Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom
+1450295134352	addons.xpi	DEBUG	checkForChanges
+1450295134352	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134353	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1450295134354	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134360	addons.xpi	DEBUG	No changes found
+1450295134397	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1450295134398	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1450295134398	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1450295134399	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1450295134401	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1450295134402	addons.manager	DEBUG	Starting provider: GMPProvider
+1450295134412	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1450295134413	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1450295134413	addons.manager	DEBUG	Starting provider: PluginProvider
+1450295134414	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1450295134414	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1450295134414	addons.manager	DEBUG	Completed startup sequence
+1450295134537	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions.json
+1450295134961	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1450295135237	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1450295135237	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1450295135238	addons.xpi-utils	DEBUG	Successfully read XPI database
+1450295135484	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript warning: https://self-repair.mozilla.org/de/repair/, line 8: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+
+Build info: version: '2.20.0', revision: '16008', time: '2012-02-27 19:03:04'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.1', java.version: '1.8.0_60'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:107)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:187)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:93)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:92)
+	... 12 more
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host localhost on port 7055 after 45000 ms. Firefox console output:
+kipping unavailable install location app-system-share
+1450295134351	addons.xpi	INFO	Mapping web2pdfextension@web2pdf.adobedotcom to /Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom
+1450295134352	addons.xpi	DEBUG	checkForChanges
+1450295134352	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134353	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1450295134354	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134360	addons.xpi	DEBUG	No changes found
+1450295134397	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1450295134398	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1450295134398	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1450295134399	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1450295134401	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1450295134402	addons.manager	DEBUG	Starting provider: GMPProvider
+1450295134412	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1450295134413	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1450295134413	addons.manager	DEBUG	Starting provider: PluginProvider
+1450295134414	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1450295134414	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1450295134414	addons.manager	DEBUG	Completed startup sequence
+1450295134537	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions.json
+1450295134961	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1450295135237	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1450295135237	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1450295135238	addons.xpi-utils	DEBUG	Successfully read XPI database
+1450295135484	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript warning: https://self-repair.mozilla.org/de/repair/, line 8: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:95)
+	... 16 more
+20:46:18.794 WARN - Exception: Unable to connect to host localhost on port 7055 after 45000 ms. Firefox console output:
+kipping unavailable install location app-system-share
+1450295134351	addons.xpi	INFO	Mapping web2pdfextension@web2pdf.adobedotcom to /Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom
+1450295134352	addons.xpi	DEBUG	checkForChanges
+1450295134352	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134353	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1450295134354	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"/var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions/fxdriver@googlecode.com","e":false,"v":"2.20.0","st":1450295126000,"mt":1450295126000}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"42.0","st":1448286085000,"mt":1448286082000}},"app-system-local":{"web2pdfextension@web2pdf.adobedotcom":{"d":"/Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/web2pdfextension@web2pdf.adobedotcom","e":false,"v":"1.1","st":1440617167000,"mt":1315232431000}}}
+1450295134360	addons.xpi	DEBUG	No changes found
+1450295134397	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1450295134398	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1450295134398	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1450295134399	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1450295134401	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1450295134402	addons.manager	DEBUG	Starting provider: GMPProvider
+1450295134412	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1450295134413	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1450295134413	addons.manager	DEBUG	Starting provider: PluginProvider
+1450295134414	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1450295134414	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1450295134414	addons.manager	DEBUG	Completed startup sequence
+1450295134537	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/8f/zjf6c4lx4bd65nt1f7lfncnm0000gn/T/anonymous8867958145575338031webdriver-profile/extensions.json
+1450295134961	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1450295134961	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1450295135237	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1450295135237	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1450295135238	addons.xpi-utils	DEBUG	Successfully read XPI database
+1450295135484	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1450295135484	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+JavaScript warning: https://self-repair.mozilla.org/de/repair/, line 8: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
+

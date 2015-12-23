@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="sass.test"
+    errors="0" failures="0" hostname="" id="" package="sass.test" skipped="0"
+    tests="1" time="5.291" timestamp="Wed, 16 Dec 2015 19:45:18 GMT">
+  
+    <testcase name="test stylus" time="5.291" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
