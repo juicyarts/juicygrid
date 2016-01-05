@@ -52,30 +52,30 @@ for $rowColLength in ($jg_row_col_lenght_min..$jg_row_col_lenght_max)
 						@media $media_bp_l
 							width "calc(%s - %s)" % ($colSize $gutterSize)
 
-				.jg-col-{$size}-{$colLength}.jg-col-square
-					$colSize = 100vw / $rowColLength * $colLength
-					$gutterSize = (($rowColLength / $colLength - 1) * $jg_col_gutter) / ($rowColLength / $colLength)
-					if $size == 's'
-						@media $media_bp_s
-							$gutterSize = $gutterSize * 4
-							width "calc(%s - %s)" % ($colSize $gutterSize)
-							height @width
-					if $size == 'm'
-						@media $media_bp_m
-							$gutterSize = ($jg_col_gutter * 2) + $jg_row_gutter/2
-							width "calc(%s - %s)" % ($colSize $gutterSize)
-							height @width
-					if $size == 'l'
-						@media $media_bp_l
-							$gutterSize = $gutterSize * 2
-							width "calc(%s - %s)" % ($colSize $gutterSize)
-							height @width
-					if $size == 'xl'
-						$gutterSiz
-						$colSize = (($jg_row_max_width / $rowColLength) * $colLength)
-						@media $media_bp_xl
-							width "calc(%s - %s)" % ($colSize $gutterSize) 
-							height @width
+					&.jg-col-square
+						$colSize = 100vw / $rowColLength * $colLength
+						$gutterSize = (($rowColLength / $colLength - 1) * $jg_col_gutter) / ($rowColLength / $colLength)
+						if $size == 's'
+							@media $media_bp_s
+								$gutterSize = $gutterSize * 4
+								width "calc(%s - %s)" % ($colSize $gutterSize)
+								height @width
+						if $size == 'm'
+							@media $media_bp_m
+								$gutterSize = $gutterSize * 3
+								width "calc(%s - %s)" % ($colSize $gutterSize)
+								height @width
+						if $size == 'l'
+							@media $media_bp_l
+								$gutterSize = $gutterSize * 2
+								width "calc(%s - %s)" % ($colSize $gutterSize)
+								height @width
+						if $size == 'xl'
+							$gutterSiz
+							$colSize = (($jg_row_max_width / $rowColLength) * $colLength)
+							@media $media_bp_xl
+								width "calc(%s - %s)" % ($colSize $gutterSize) 
+								height @width
 	
 
 

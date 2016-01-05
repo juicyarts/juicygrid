@@ -30,7 +30,7 @@ gulp.task('watch', function() {
 });
 // test
 gulp.task('test', function() {
-	runSequence('env:test', 'nodemon', 'e2e:ch', 'e2e:ff', 'stop');
+	runSequence('env:test', 'nodemon', 'e2e:ch', 'stop');
 });
 
 // build
@@ -86,7 +86,6 @@ gulp.task('stylus:compile', function() {
 		.pipe(gulp.dest('./public/stylus/dist/'))
 		.pipe(bs.stream());
 });
-
 
 // e2e tests
 gulp.task('e2e:ch', function() {
