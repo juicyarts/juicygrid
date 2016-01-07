@@ -74,7 +74,7 @@ gulp.task('stylus:lint', function() {
 });
 
 gulp.task('stylus:compile', function() {
-	return gulp.src('./public/stylus/juicy-grid.styl')
+	return gulp.src(['./public/stylus/juicy-grid.styl', './public/stylus/wfb-grid.styl'])
 		.pipe(plugins.stylus({
 			use: nib(),
 			compress: process.env.NODE_ENV === 'development' ? false : true

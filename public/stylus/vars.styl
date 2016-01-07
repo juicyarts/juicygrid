@@ -19,6 +19,6 @@ $bp_m = 700px
 $bp_s = 500px
 
 $media_bp_xl = 'screen and (min-width %s)' % $jg_row_max_width
-$media_bp_l = 'screen and (max-width %s)' % $bp_l
-$media_bp_m = 'screen and (max-width %s)' % $bp_m
+$media_bp_l = 'screen and (min-width %s) and (max-width %s)' % $bp_m $bp_l
+$media_bp_m = 'screen and (min-width %s) and (max-width %s)' % $bp_s $bp_m
 $media_bp_s = 'screen and (max-width %s)' % $bp_s

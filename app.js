@@ -28,6 +28,14 @@ app.get('/test/:page', function(req, res){
 	});
 })
 
+app.get('/demo/wfb', function(req, res) {
+	res.render('./wfb.jade', {
+		title: 'wfb-grid' ,
+		cssSrc: '/stylus/dist/wfb-grid.css'
+	});
+})
+
+
 var port = function(){
 	if (process.env.NODE_ENV === 'test'){
 		return 4000;
@@ -38,3 +46,5 @@ var port = function(){
 app.listen(port(), function(){
 	console.log('running on localhost:', port());
 });
+
+

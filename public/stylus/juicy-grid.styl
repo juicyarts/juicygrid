@@ -1,6 +1,4 @@
 @import 'vars'
-@import 'demo'
-
 .jg-row
 	box-sizing border-box
 	position relative
@@ -17,6 +15,18 @@
 	@media $media_bp_l
 		width 100%
 		padding 0 $jg_row_gutter
+	&.jg-row-fw
+		width 100%
+	&.fixed
+		position fixed
+		top 0
+		left 0
+	&.fixed + .jg-row(.no-mobile)
+		margin-top 30px
+	> .jg-row
+		margin 0 auto
+		padding 0
+
 .jg-col
 	position relative
 	float left
@@ -25,8 +35,6 @@
 	flex-direction column
 	align-content center
 	align-items center
-	height $jg_col_min_height
-	margin $jg_row_gutter 0 0 0
 	justify-content space-around
 	&.jg-col-dynamic
 		flex 1

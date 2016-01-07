@@ -1,0 +1,61 @@
+@import 'juicy-grid'
+
+$fixed_header_bg = #505050
+
+
+.no-desktop
+	@media screen and (min-width $bp_m)
+		display none
+
+.no-tablet
+	@media screen and (min-width $bp_s) and (max-width $bp_m)
+		display none
+
+.no-mobile
+	@media screen and (max-width $bp_s)
+		display none
+
+*
+	margin 0
+	padding 0
+	font-size 100%
+	font-family Helvetica, Arial, sans-serif
+
+body
+	background #daeafb
+	
+#wfb-wrapper
+	width 100%
+	position relative
+	float left
+	clear both
+	overflow hidden
+	.off-canvas
+		width 70%
+		height 100%
+		position absolute
+		transform translate3d(-100%, 0, 0)
+		top 0
+		background yellow
+		top 0 
+		transition transform .3s linear
+		&.active
+			transform translate3d(0%, 0, 0)
+	.on-canvas
+		width 100%
+		position relative
+		float left
+		transform translate3d(70%, 0, 0)
+		transition transform .3s linear
+		&.active
+			transform translate3d(0%, 0, 0)
+.wfb-fixed-header
+	background $fixed_header_bg
+	height 30px
+	color white
+
+.wfb-mobile-ci
+	align-items flex-start
+	img
+		height 90%
+		width auto
