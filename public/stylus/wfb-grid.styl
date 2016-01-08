@@ -1,61 +1,131 @@
 @import 'juicy-grid'
+@import 'demo'
+@import 'nib'
 
-$fixed_header_bg = #505050
+$mobile_header_bg = #505050
+$mobile_header_height = 50px
+$mobile_header_color = white
 
-
-.no-desktop
-	@media screen and (min-width $bp_m)
-		display none
-
-.no-tablet
-	@media screen and (min-width $bp_s) and (max-width $bp_m)
-		display none
-
-.no-mobile
-	@media screen and (max-width $bp_s)
-		display none
+$nav_bg = linear-gradient(top, #FEFEFE, #F0F0F0)
+$nav_color = rgba(9, 88, 158, 1)
+$nav_bg_active = linear-gradient(top, rgba(0, 74, 136, 1), rgba(9, 88, 158, 1))
+$nav_color_active = #f8b64b
 
 *
 	margin 0
 	padding 0
+	outline none
+	border 0
 	font-size 100%
 	font-family Helvetica, Arial, sans-serif
-
+	user-select none
 body
 	background #daeafb
-	
-#wfb-wrapper
 	width 100%
 	position relative
 	float left
 	clear both
-	overflow hidden
-	.off-canvas
+	@media $media_bp_m
+		&.viewMenu
+			#wfb-header	
+				transform translate3d(70%, 0, 0)
+			#wfb-navigation
+				transform translate3d(0%, 0, 0)
+			#wfb-content
+				opacity 0.2
+
+#wfb-header
+	@media $media_bp_m
+		position fixed
+		top 0
+		left 0
+		width 100%
+		z-index 2
+		transition transform .6s cubic-bezier(.19, 1, .22, 1)
+	#wfb-head
+		@media $media_bp_m
+			height $mobile_header_height
+			background $mobile_header_bg
+			color $mobile_header_color
+			box-shadow 0 1px 1px 4px rgba(0, 0, 0, .1)
+			.wfb-ci
+				align-items flex-start
+				img
+					height 40px
+					width auto
+					display block
+#wfb-navigation
+	@media $media_bp_m
+		transition transform .6s cubic-bezier(.19, 1, .22, 1)
+		position fixed
 		width 70%
 		height 100%
-		position absolute
 		transform translate3d(-100%, 0, 0)
-		top 0
-		background yellow
-		top 0 
-		transition transform .3s linear
-		&.active
-			transform translate3d(0%, 0, 0)
-	.on-canvas
-		width 100%
-		position relative
-		float left
-		transform translate3d(70%, 0, 0)
-		transition transform .3s linear
-		&.active
-			transform translate3d(0%, 0, 0)
-.wfb-fixed-header
-	background $fixed_header_bg
-	height 30px
-	color white
-
-.wfb-mobile-ci
-	align-items flex-start
-	img
-		height 90%
-		width auto
+		overflow auto
+		z-index 3
+		background $nav_bg
+		.jg-row
+			margin 0
+			padding 0
+		.wfb-nav-main
+			> ul
+				position relative
+				float left
+				clear both
+				li
+					overflow hidden
+					outline none
+					background $nav_bg
+					color $nav_color
+					position relative
+					float left
+					clear both
+					width 100%
+					display flex
+					flex-direction column
+					align-items center
+					align-content center
+					justify-content center
+					cursor pointer
+					
+					&.active
+						background $nav_bg_active
+						color $nav_color_active
+					&:hover
+						color $nav_color_active
+					&.expand
+						height auto
+						.nav-item-content
+							border-bottom 1px solid rgba(255, 255, 255, .4)
+						.nav-item-sub
+							height auto
+							opacity 1
+					.nav-item-content
+						height $mobile_header_height
+						position relative
+						float left
+						width 100%
+						clear both
+						display flex
+						flex-direction row
+						align-items center
+						align-content center
+						padding 0 5px
+						justify-content space-between
+						box-sizing border-box
+					.nav-item-sub
+						width 100%				
+						opacity 0
+						height 0
+#wfb-content
+	z-index 1
+	flex 1
+	overflow-y auto
+	transition opacity .6s cubic-bezier(.19, 1, .22, 1)
+	@media $media_bp_m
+		margin-top $mobile_header_height + 3px
+	
+	.jg-col
+		min-height 100px
+		margin-top $jg_col_gutter
+		

@@ -1,41 +1,143 @@
-html
+doctype html
+html(lang="en")
 	head
 		title #{title}
 		link(rel="stylesheet", href="#{cssSrc}")
-		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0")
+		meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
 		meta(name="theme-color" content="#505050")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js", type='text/javascript')
 		script(src="/js/wfb.js")
-	body(ng-app="wfb" ng-controller="menuController")
-		#wfb-wrapper
-			.off-canvas(ng-class="{'active': showMenu}")
-				| test
-			.on-canvas(ng-class="{'active': !showMenu}")
-				.jg-row.jg-row-fw.fixed.wfb-fixed-header
-					.jg-row.jg-row-8
-						.jg-col.jg-col-s-1.wfb-mobile-burger.no-desktop.no-tablet(ng-click="showMenu = !showMenu")
-							i(class="material-icons")
-								| &#xE5D2;
-						.jg-col.jg-col-s-4.wfb-mobile-ci.no-desktop.no-tablet
-							img(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo_75x75.png", alt="")
+	body(ng-app="wfb" ng-controller="menuController", ng-class="{'viewMenu': showMenu}")
+		#wfb-header
+			#wfb-head.jg-row.jg-row-8
+				.jg-col.jg-col-s-1.jg-col-m-1.wfb-burger(ng-click="showMenu = !showMenu")
+					i(class="material-icons")
+						| &#xE5D2;
+				.jg-col.jg-col-s-6.jg-col-m-6.wfb-ci
+					//- img(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo_75x75.png", alt="")
+					img(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo_de_invertiert.png", alt="")
+				.jg-col.jg-col-s-1.jg-col-m-1.wfb-search
+					i(class="material-icons")
+						| &#xE8B6;
+		#wfb-navigation
+			nav.jg-row.jg-row-12.wfb-nav-main
+				ul.jg-col-m-12
+					li.home.active(toggle-menu-item-sub,  ng-class="{'expand': expand}")
+						.nav-item-content(ng-click="toggle()")
+							i(class="material-icons") &#xE88A;
+							.text Home
+							i(class="material-icons" ng-if="expand") &#xE5CE;
+							i(class="material-icons" ng-if="!expand") &#xE5CF;
 
-						.jg-col.jg-col-s-1.wfb-choose-country
-							img(src="http://s.weltsport.net/gfx/emblem/common/30x30/3412.png", alt="")
-						.jg-col.jg-col-s-1.wfb-choose-language
-							| DE
-						.jg-col.jg-col-s-1.wfb-search
-							i(class="material-icons")
-								| &#xE8B6;
-				.jg-row.jg-row-10.wfb-ci-header.no-mobile
-					.jg-col.jg-col-3
-						img(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo.png", alt="")
-				.jg-row.jg-row-14.jg-row-fw.wfb-ad-content-top
-					.jg-col-2
-						| test
-					.jg-col-10
-						img(src="http://placehold.it/728x90", alt="")
-					.jg-col-2
-						| test 
+						ul.nav-item-sub
+							li
+								.nav-item-content
+									.text sub-nav-item-1
+							li 
+								.nav-item-content
+									.text sub-nav-item-2
+							li 
+								.nav-item-content
+									.text sub-nav-item-3
+							li 
+								.nav-item-content
+									.text sub-nav-item-4
+							li 
+								.nav-item-content
+									.text sub-nav-item-5
+							li 
+								.nav-item-content
+									.text sub-nav-item-6
+							li 
+								.nav-item-content
+									.text sub-nav-item-7
+							li 
+								.nav-item-content
+									.text sub-nav-item-8
+							li 
+								.nav-item-content
+									.text sub-nav-item-9
+							li 
+								.nav-item-content
+									.text sub-nav-item-10
+							li 
+								.nav-item-content
+									.text sub-nav-item-11
+							li 
+								.nav-item-content
+									.text sub-nav-item-12
+							li 
+								.nav-item-content
+									.text sub-nav-item-13
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-2
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-3
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-4
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-5
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-6
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-7
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-8
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-9
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-10
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-11
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-12
+							i(class="material-icons") &#xE5CF;
+					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-content(ng-click="toggle()")
+							.text nav-item-13
+							i(class="material-icons") &#xE5CF;
+
+		#wfb-content
+			#wfb-top-ad-content
+				.jg-row.jg-row-fw.jg-row-12
+					.jg-col.jg-col-s-12.jg-col-m-12
+						img(src="http://placehold.it/320x90", alt="")
+
+			#wfb-main-content
+				#wfb-matches-bar.jg-row.jg-row-12
+					.wfb-matches-bar-filter.jg-col.jg-col-s-12.jg-col-m-12 filter
+					.wfb-matches-bar-slider.jg-col.jg-col-s-12.jg-col-m-12 Slider
+
+				#wfb-news-images
+					.jg-row.jg-row-12
+						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-8 News-Teaser
+						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-4
+							.module
+								img(src="http://placehold.it/300x250", alt="")
+							.module.ad-content
+								img(src="http://placehold.it/300x250", alt="")
+
 
 

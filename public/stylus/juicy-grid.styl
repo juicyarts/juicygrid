@@ -1,4 +1,5 @@
 @import 'vars'
+
 .jg-row
 	box-sizing border-box
 	position relative
@@ -10,19 +11,13 @@
 	margin 0 auto
 	justify-content space-between
 	flex-wrap wrap
-	&:last-child
-		margin-bottom $jg_row_gutter
 	@media $media_bp_l
 		width 100%
 		padding 0 $jg_row_gutter
+	&:last-child
+		margin-bottom $jg_row_gutter
 	&.jg-row-fw
 		width 100%
-	&.fixed
-		position fixed
-		top 0
-		left 0
-	&.fixed + .jg-row(.no-mobile)
-		margin-top 30px
 	> .jg-row
 		margin 0 auto
 		padding 0
