@@ -11,7 +11,7 @@
 	margin 0 auto
 	justify-content space-between
 	flex-wrap wrap
-	@media $media_bp_l
+	@media screen and (max-width $bp_l)
 		width 100%
 		padding 0 $jg_row_gutter
 	&:last-child
@@ -21,6 +21,16 @@
 	> .jg-row
 		margin 0 auto
 		padding 0
+
+.no-tablet
+	@media $media_bp_m
+		display none !important
+.no-mobile
+	@media $media_bp_s
+		display none !important
+.no-desktop
+	@media $media_bp_l
+		display none !important 
 
 .jg-col
 	position relative
@@ -44,15 +54,15 @@ for $rowColLength in ($jg_row_col_lenght_min..$jg_row_col_lenght_max)
 			$gutterSize = (($rowColLength / $colLength - 1) * $jg_col_gutter) / ($rowColLength / $colLength)
 			for $size in $jg_col_bp_list
 				.jg-col-{$size}-{$colLength}
-					if $size == 's'
-						@media $media_bp_s
+					if $size == 'l'
+						@media $media_bp_l
 							width "calc(%s - %s)" % ($colSize $gutterSize)
 					if $size == 'm'
 						@media $media_bp_m
+					
 							width "calc(%s - %s)" % ($colSize $gutterSize)
-					if $size == 'l'
-						width "calc(%s - %s)" % ($colSize $gutterSize)
-						@media $media_bp_l
+					if $size == 's'
+						@media $media_bp_s
 							width "calc(%s - %s)" % ($colSize $gutterSize)
 
 					&.jg-col-square

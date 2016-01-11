@@ -18,6 +18,7 @@
   "author": "huess@juicyarts.de",
   "license": "ISC",
   "devDependencies": {
+    "bower": "^1.7.2",
     "browser-sync": "^2.10.0",
     "chromedriver": "^2.20.0",
     "express": "^4.13.3",

@@ -2,142 +2,217 @@ doctype html
 html(lang="en")
 	head
 		title #{title}
+		link(rel="stylesheet", href="/js/lib/mdi/css/materialdesignicons.css")
+		link(rel="stylesheet", href="/js/lib/open-sans/css/open-sans.css")
 		link(rel="stylesheet", href="#{cssSrc}")
 		meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
 		meta(name="theme-color" content="#505050")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js", type='text/javascript')
+		script(src="/js/lib/angular/angular.min.js", type='text/javascript')
 		script(src="/js/wfb.js")
 	body(ng-app="wfb" ng-controller="menuController", ng-class="{'viewMenu': showMenu}")
 		#wfb-header
 			#wfb-head.jg-row.jg-row-8
-				.jg-col.jg-col-s-1.jg-col-m-1.wfb-burger(ng-click="showMenu = !showMenu")
-					i(class="material-icons")
-						| &#xE5D2;
-				.jg-col.jg-col-s-6.jg-col-m-6.wfb-ci
-					//- img(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo_75x75.png", alt="")
-					img(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo_de_invertiert.png", alt="")
-				.jg-col.jg-col-s-1.jg-col-m-1.wfb-search
-					i(class="material-icons")
-						| &#xE8B6;
+				.jg-col.jg-col-s-1.jg-col-m-1.wfb-burger.no-desktop(ng-click="showMenu = !showMenu")
+					i(class="mdi mdi-menu")
+						
+				.jg-col.jg-col-s-6.jg-col-m-6.jg-col-l-6.wfb-ci
+					img.no-mobile.no-tablet(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo.png", alt="")
+					img.no-desktop(src="http://s.weltsport.net/bilder/shared/ng_2013/wfb_logo_de_invertiert.png", alt="")
+				.jg-col.jg-col-s-1.jg-col-m-1.jg-col-l-1.wfb-search
+					i(class="mdi mdi-magnify")
+						
+				.jg-col.jg-col-m-1.jg-col-l-1.wfb-socialmedia.no-mobile.no-tablet
+					i(class="mdi mdi-share-variant")
+				
 		#wfb-navigation
 			nav.jg-row.jg-row-12.wfb-nav-main
 				ul.jg-col-m-12
 					li.home.active(toggle-menu-item-sub,  ng-class="{'expand': expand}")
 						.nav-item-content(ng-click="toggle()")
-							i(class="material-icons") &#xE88A;
-							.text Home
-							i(class="material-icons" ng-if="expand") &#xE5CE;
-							i(class="material-icons" ng-if="!expand") &#xE5CF;
+							.nav-item-tooltip.no-mobile.no-tablet
+								| some tooltip content
+							i(class="mdi mdi-home")
+							.text.no-desktop Home
+							i(class="mdi mdi-chevron-up no-desktop" ng-if="expand")
+							i(class="mdi mdi-chevron-down no-desktop" ng-if="!expand")
 
 						ul.nav-item-sub
 							li
 								.nav-item-content
-									.text sub-nav-item-1
+									.text sni-1
 							li 
 								.nav-item-content
-									.text sub-nav-item-2
+									.text sni-2
 							li 
 								.nav-item-content
-									.text sub-nav-item-3
+									.text sni-3
 							li 
 								.nav-item-content
-									.text sub-nav-item-4
+									.text sni-4
 							li 
 								.nav-item-content
-									.text sub-nav-item-5
+									.text sni-5
 							li 
 								.nav-item-content
-									.text sub-nav-item-6
+									.text sni-6
 							li 
 								.nav-item-content
-									.text sub-nav-item-7
+									.text sni-7
 							li 
 								.nav-item-content
-									.text sub-nav-item-8
+									.text sni-8
 							li 
 								.nav-item-content
-									.text sub-nav-item-9
+									.text sni-9
 							li 
 								.nav-item-content
-									.text sub-nav-item-10
+									.text sni-10
 							li 
 								.nav-item-content
-									.text sub-nav-item-11
+									.text sni-11
 							li 
 								.nav-item-content
-									.text sub-nav-item-12
+									.text sni-12
 							li 
 								.nav-item-content
-									.text sub-nav-item-13
+									.text sni-13
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-2
-							i(class="material-icons") &#xE5CF;
+							.text ni-2
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-3
-							i(class="material-icons") &#xE5CF;
+							.text ni-3
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-4
-							i(class="material-icons") &#xE5CF;
+							.text ni-4
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-5
-							i(class="material-icons") &#xE5CF;
+							.text ni-5
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-6
-							i(class="material-icons") &#xE5CF;
+							.text ni-6
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-7
-							i(class="material-icons") &#xE5CF;
+							.text ni-7
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-8
-							i(class="material-icons") &#xE5CF;
+							.text ni-8
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-9
-							i(class="material-icons") &#xE5CF;
+							.text ni-9
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-10
-							i(class="material-icons") &#xE5CF;
+							.text ni-10
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-11
-							i(class="material-icons") &#xE5CF;
+							.text ni-11
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-12
-							i(class="material-icons") &#xE5CF;
+							.text ni-12
+							i(class="mdi mdi-chevron-down no-desktop")
 					li(toggle-menu-item-sub,  ng-class="{'expand': expand}") 
+						.nav-item-tooltip.no-mobile.no-tablet
+							| some tooltip content
 						.nav-item-content(ng-click="toggle()")
-							.text nav-item-13
-							i(class="material-icons") &#xE5CF;
+							.text ni-13
+							i(class="mdi mdi-chevron-down no-desktop")
 
 		#wfb-content
 			#wfb-top-ad-content
-				.jg-row.jg-row-fw.jg-row-12
-					.jg-col.jg-col-s-12.jg-col-m-12
-						img(src="http://placehold.it/320x90", alt="")
+				.jg-row.jg-row-12
+					.wfb-fireplace-left.wfb-ad-content.no-tablet.no-mobile
+						img(src="http://placehold.it/160x600", alt="")
+					.jg-col.jg-col-s-12.jg-col-m-12.jg-col-l-12
+						img(src="http://placehold.it/1201x120", alt="")
+					.wfb-fireplace-right.wfb-ad-content.no-tablet.no-mobile
+						img(src="http://placehold.it/160x600", alt="")
 
 			#wfb-main-content
 				#wfb-matches-bar.jg-row.jg-row-12
-					.wfb-matches-bar-filter.jg-col.jg-col-s-12.jg-col-m-12 filter
-					.wfb-matches-bar-slider.jg-col.jg-col-s-12.jg-col-m-12 Slider
+					.wfb-matches-bar-filter.jg-col.jg-col-s-12.jg-col-m-12.jg-col-l-12 filter
+					.wfb-matches-bar-slider.jg-col.jg-col-s-12.jg-col-m-12.jg-col-l-12 Slider
 
 				#wfb-news-images
 					.jg-row.jg-row-12
-						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-8 News-Teaser
-						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-4
+						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-8.jg-col-l-8 News-Teaser
+						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-4.jg-col-l-4
 							.module
-								img(src="http://placehold.it/300x250", alt="")
+								| Images Teaser
 							.module.ad-content
-								img(src="http://placehold.it/300x250", alt="")
+								| News Ticker
+				#wfb-matches-transfers
+					.jg-row.jg-row-12
+						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-8.jg-col-l-8 Matches Today
+						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-4.jg-col-l-4
+							.module
+								| Transfers
+				#wfb-competition-a.wfb-competition-block
+					.jg-row.jg-row-12
+						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-8.jg-col-l-8 Competition-news
+						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-4.jg-col-l-4
+							.module
+								| competition teams
+							.module.ad-content
+								| competition navigation
+				#wfb-competition-a.wfb-competition-block
+					.jg-row.jg-row-12
+						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-8.jg-col-l-8 Competition-news
+						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-4.jg-col-l-4
+							.module
+								| competition teams
+							.module.ad-content
+								| competition navigation
+				#wfb-community-block
+					.jg-row.jg-row-12
+						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-6.jg-col-l-6 Neu Bei Wfb
+						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-6.jg-col-l-6
+							.module
+								| Weltfussball Forum
+				#wfb-videos-block
+					.jg-row.jg-row-12
+						#wfb-news-teaser.jg-col.jg-col-s-12.jg-col-m-6.jg-col-l-6 Videos
+						#wfb-images-teaser.jg-col.jg-col-s-12.jg-col-m-6.jg-col-l-6
+							img(src="http://placehold.it/300x250", alt="")
 
 
+			footer
+				.jg-row.jg-row-12
+					.wfb-footer.jg-col.jg-col-s-12.jg-col-m-12.jg-col-l-12
+						| Some Footer Content
 
+				.jg-row.jg-row-12
+					.wfb-footer-ad.jg-col.jg-col-s-12.jg-col-m-12.jg-col-l-12
+						img(src="http://placehold.it/1201x120", alt="")
+						

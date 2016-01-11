@@ -26,7 +26,7 @@ gulp.task('env:test', function() {
 gulp.task('default', ['env:dev', 'sync', 'stylus', 'watch'], function() {});
 
 gulp.task('watch', function() {
-	gulp.watch('./public/stylus/*.styl', ['stylus']);
+	gulp.watch('./public/stylus/**/*.styl', ['stylus']);
 });
 // test
 gulp.task('test', function() {
