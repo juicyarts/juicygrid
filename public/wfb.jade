@@ -9,7 +9,7 @@ html(lang="en")
 		meta(name="theme-color" content="#505050")
 		script(src="/js/lib/angular/angular.min.js", type='text/javascript')
 		script(src="/js/wfb.js")
-	body(ng-app="wfb" ng-controller="menuController", ng-class="{'viewMenu': showMenu}")
+	body(ng-app="wfb" ng-controller="menuController", ng-class="{'viewMenu': showMenu, 'fixedHeader': fixHeader}")
 		#wfb-header
 			#wfb-head.jg-row.jg-row-8
 				.jg-col.jg-col-s-1.jg-col-m-1.wfb-burger.no-desktop(ng-click="showMenu = !showMenu")

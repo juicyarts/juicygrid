@@ -1,0 +1,54 @@
+#wfb-header
+	@media screen and (max-width $bp_m)
+		position fixed
+		top 0
+		left 0
+		width 100%
+		z-index 2
+		transition transform .6s cubic-bezier(.19, 1, .22, 1)
+	#wfb-head
+		@media screen and (max-width $bp_m)
+			height $mobile_header_height
+			background $mobile_header_bg
+			color $mobile_header_color
+			box-shadow 0 1px 1px 4px rgba(0, 0, 0, .1)
+		.wfb-ci
+			align-items flex-start
+			img
+				height 60px
+				@media screen and (max-width $bp_m)
+					height 40px
+				width auto
+				display block
+		@media $media_bp_l
+			justify-content space-between
+			height $desktop_header_height
+.fixedHeader
+	@media $media_bp_l
+		#wfb-header
+			position fixed
+			z-index 3000
+			width 100%
+			#wfb-head
+				background $mobile_header_bg
+				height 50px
+				transition all 0.3s ease-in
+				color white
+				.wfb-ci
+					.no-desktop
+						display block !important
+						height 35px
+						margin-left 10px
+						width auto
+					.no-mobile
+						display none
+		#wfb-navigation
+			position fixed
+			z-index 3000
+			top 50px
+			transition all 0.3s ease-in
+			width 100%
+			.nav-item-sub
+				box-shadow 0px 2px 5px 1px rgba(0, 0, 0, .2)
+		#wfb-content
+			margin-top 240px

@@ -1,0 +1,165 @@
+#wfb-navigation
+	@media screen and (min-width $bp_m)
+		.wfb-nav-main
+			margin-bottom 30px
+			> ul
+				background $nav_bg	
+				width 100%
+				position relative
+				float left
+				display flex
+				flex-direction row			
+				> li
+					float left
+					flex 1
+					height 30px
+					display flex
+					flex-direction row
+					align-content center
+					align-items center				
+					cursor pointer
+					.nav-item-tooltip
+						display none
+						position absolute
+						top -40px
+						padding 4px
+						background $nav_tooltip_bg
+						color $nav_tooltip_color
+						&:after
+							content ''
+							display block
+							position absolute
+							bottom -10px
+							left 30px
+							border-top 10px solid $nav_tooltip_bg
+							border-left 10px solid transparent
+							border-right 10px solid transparent
+							
+					&:not(.active)
+						&:not(:last-child)
+							> .nav-item-content		
+								border-right 1px solid rgba(0, 0, 0, .2)
+					> .nav-item-content
+						background $nav_bg
+						color $nav_color
+						flex 1
+						text-align center
+						font-size $nav_fs
+						font-weight $nav_fw
+					&.active
+						> .nav-item-content
+							background $nav_bg_active
+							color $nav_color_active
+					&:hover
+						> .nav-item-tooltip
+							display block
+							
+						> .nav-item-content
+							color $nav_color_active
+				.nav-item-sub
+					width 100%
+					position absolute
+					float left
+					display flex
+					flex-direction row			
+					left 0
+					top 30px
+					width 100%
+					background $sub_nav_bg
+					color $sub_nav_color
+					li
+						float left
+						flex 1
+						height 30px
+						display flex
+						flex-direction row
+						align-content center
+						align-items center
+						cursor pointer
+						&:not(.active)
+							&:not(:last-child)
+								> .nav-item-content		
+									border-right 1px solid rgba(255, 255, 255, .2)
+						.nav-item-content
+							flex 1
+							text-align center
+							font-size $sub_nav_fs
+							font-weight $sub_nav_fw
+						&.active
+							.nav-item-content
+								font-weight bold						
+			
+	@media screen and (max-width $bp_m)
+		transition transform .6s cubic-bezier(.19, 1, .22, 1)
+		position fixed
+		width 70%
+		height 100%
+		transform translate3d(-100%, 0, 0)
+		overflow auto
+		z-index 3
+		background $nav_bg
+		.jg-row
+			margin 0
+			padding 0
+		.wfb-nav-main
+			> ul
+				position relative
+				float left
+				clear both
+				width 100%
+				li
+					overflow hidden
+					outline none
+					position relative
+					float left
+					clear both
+					width 100%
+					display flex
+					flex-direction column
+					align-items center
+					align-content center
+					justify-content center
+					cursor pointer
+					
+					&.active
+						> .nav-item-content
+							background $nav_bg_active
+							color $nav_color_active
+					&:hover
+						> .nav-item-content
+							color $nav_color_active
+					&.expand
+						height auto
+						.nav-item-content
+							border-bottom 1px solid rgba(255, 255, 255, .4)
+						.nav-item-sub
+							height auto
+							opacity 1
+					.nav-item-content
+						height $mobile_header_height
+						position relative
+						float left
+						width 100%
+						clear both
+						display flex
+						flex-direction row
+						align-items center
+						align-content center
+						padding 0 5px
+						justify-content space-between
+						box-sizing border-box
+						background $nav_bg
+						color $nav_color
+					.nav-item-sub
+						width 100%	
+						opacity 0
+						height 0
+						padding 0 15px
+						box-sizing border-box
+						> li
+							&:not(:last-child)
+								.nav-item-content
+									border-bottom 1px solid rgba(0, 0, 0, .2)
+							.nav-item-content
+								background transparent
+															

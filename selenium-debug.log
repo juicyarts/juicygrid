@@ -1,82 +1,60 @@
-Jan 02, 2016 11:00:59 AM org.openqa.grid.selenium.GridLauncher main
+Jan 11, 2016 2:55:21 PM org.openqa.grid.selenium.GridLauncher main
 INFORMATION: Launching a standalone server
-0 [main] INFO org.openqa.selenium.server.SeleniumServer - Java: Oracle Corporation 25.60-b23
+1 [main] INFO org.openqa.selenium.server.SeleniumServer - Java: Oracle Corporation 25.60-b23
 1 [main] INFO org.openqa.selenium.server.SeleniumServer - OS: Mac OS X 10.11.1 x86_64
-4 [main] INFO org.openqa.selenium.server.SeleniumServer - v2.20.0, with Core v2.20.0. Built from revision 16008
-102 [main] INFO org.openqa.selenium.server.SeleniumServer - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-103 [main] INFO org.openqa.jetty.http.HttpServer - Version Jetty/5.1.x
-104 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/selenium-server,/selenium-server]
-129 [main] INFO org.openqa.jetty.util.Container - Started org.openqa.jetty.jetty.servlet.ServletHandler@25618e91
-129 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/wd,/wd]
-130 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
-130 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/,/]
-134 [main] INFO org.openqa.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
-134 [main] INFO org.openqa.jetty.util.Container - Started org.openqa.jetty.jetty.Server@76fb509a
-11:01:00.319 INFO - Executing: [new session: {acceptSslCerts=true, name=Stylus Test, browserName=chrome, javascriptEnabled=true, platform=ANY}] at URL: /session)
-Starting ChromeDriver 2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b) on port 15867
+6 [main] INFO org.openqa.selenium.server.SeleniumServer - v2.20.0, with Core v2.20.0. Built from revision 16008
+131 [main] INFO org.openqa.selenium.server.SeleniumServer - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+132 [main] INFO org.openqa.jetty.http.HttpServer - Version Jetty/5.1.x
+133 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/selenium-server,/selenium-server]
+174 [main] INFO org.openqa.jetty.util.Container - Started org.openqa.jetty.jetty.servlet.ServletHandler@25618e91
+174 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/wd,/wd]
+174 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+174 [main] INFO org.openqa.jetty.util.Container - Started HttpContext[/,/]
+179 [main] INFO org.openqa.jetty.http.SocketListener - Started SocketListener on 0.0.0.0:4444
+179 [main] INFO org.openqa.jetty.util.Container - Started org.openqa.jetty.jetty.Server@76fb509a
+14:55:22.266 INFO - Executing: [new session: {acceptSslCerts=true, name=Stylus Test, browserName=chrome, javascriptEnabled=true, platform=ANY}] at URL: /session)
+Starting ChromeDriver 2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b) on port 4861
 Only local connections are allowed.
-11:01:01.759 INFO - Done: /session
-11:01:01.773 INFO - Executing: org.openqa.selenium.remote.server.handler.GetSessionCapabilities@645190e7 at URL: /session/1451728860030)
-11:01:01.774 INFO - Done: /session/1451728860030
-11:01:01.785 INFO - Executing: [set window size] at URL: /session/1451728860030/window/current/size)
-11:01:02.084 INFO - Done: /session/1451728860030/window/current/size
-11:01:02.088 INFO - Executing: [get: http://localhost:4000/test/stylus] at URL: /session/1451728860030/url)
-11:01:02.866 INFO - Done: /session/1451728860030/url
-11:01:02.876 INFO - Executing: [find elements: By.selector: body] at URL: /session/1451728860030/elements)
-11:01:02.911 INFO - Done: /session/1451728860030/elements
-11:01:02.914 INFO - Executing: [is displayed: 0 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec15] at URL: /session/1451728860030/element/0/displayed)
-11:01:02.924 INFO - Done: /session/1451728860030/element/0/displayed
-11:01:02.928 INFO - Executing: [set window size] at URL: /session/1451728860030/window/current/size)
-11:01:03.057 INFO - Done: /session/1451728860030/window/current/size
-11:01:03.061 INFO - Executing: [get title] at URL: /session/1451728860030/title)
-11:01:03.068 INFO - Done: /session/1451728860030/title
-11:01:03.080 INFO - Executing: [set window size] at URL: /session/1451728860030/window/current/size)
-11:01:03.189 INFO - Done: /session/1451728860030/window/current/size
-11:01:03.192 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.207 INFO - Done: /session/1451728860030/elements
-11:01:03.212 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, box-sizing] at URL: /session/1451728860030/element/1/css/box-sizing)
-11:01:03.219 INFO - Done: /session/1451728860030/element/1/css/box-sizing
-11:01:03.223 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.236 INFO - Done: /session/1451728860030/elements
-11:01:03.239 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, display] at URL: /session/1451728860030/element/1/css/display)
-11:01:03.245 INFO - Done: /session/1451728860030/element/1/css/display
-11:01:03.248 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.256 INFO - Done: /session/1451728860030/elements
-11:01:03.260 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, flex-direction] at URL: /session/1451728860030/element/1/css/flex-direction)
-11:01:03.272 INFO - Done: /session/1451728860030/element/1/css/flex-direction
-11:01:03.279 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.298 INFO - Done: /session/1451728860030/elements
-11:01:03.302 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, justify-content] at URL: /session/1451728860030/element/1/css/justify-content)
-11:01:03.311 INFO - Done: /session/1451728860030/element/1/css/justify-content
-11:01:03.314 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.325 INFO - Done: /session/1451728860030/elements
-11:01:03.332 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, flex-wrap] at URL: /session/1451728860030/element/1/css/flex-wrap)
-11:01:03.343 INFO - Done: /session/1451728860030/element/1/css/flex-wrap
-11:01:03.347 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.355 INFO - Done: /session/1451728860030/elements
-11:01:03.359 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, width] at URL: /session/1451728860030/element/1/css/width)
-11:01:03.369 INFO - Done: /session/1451728860030/element/1/css/width
-11:01:03.382 INFO - Executing: [set window size] at URL: /session/1451728860030/window/current/size)
-11:01:03.515 INFO - Done: /session/1451728860030/window/current/size
-11:01:03.518 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.525 INFO - Done: /session/1451728860030/elements
-11:01:03.528 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, width] at URL: /session/1451728860030/element/1/css/width)
-11:01:03.535 INFO - Done: /session/1451728860030/element/1/css/width
-11:01:03.538 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1451728860030/elements)
-11:01:03.544 INFO - Done: /session/1451728860030/elements
-11:01:03.547 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec16, padding] at URL: /session/1451728860030/element/1/css/padding)
-11:01:03.553 INFO - Done: /session/1451728860030/element/1/css/padding
-11:01:03.564 INFO - Executing: [set window size] at URL: /session/1451728860030/window/current/size)
-11:01:03.693 INFO - Done: /session/1451728860030/window/current/size
-11:01:03.696 INFO - Executing: [set window size] at URL: /session/1451728860030/window/current/size)
-11:01:03.803 INFO - Done: /session/1451728860030/window/current/size
-11:01:03.806 INFO - Executing: [find element: By.selector: .jg-row.jg-row-2] at URL: /session/1451728860030/element)
-11:01:03.818 INFO - Done: /session/1451728860030/element
-11:01:03.821 INFO - Executing: [get element size: 2 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@2deeec17] at URL: /session/1451728860030/element/2/size)
-11:01:03.827 INFO - Done: /session/1451728860030/element/2/size
-11:01:03.836 INFO - Executing: [find element: By.selector: .jg-row.jg-row-12 .jg-col-l-1] at URL: /session/1451728860030/element)
-11:01:03.848 INFO - Done: /session/1451728860030/element
-11:01:03.852 INFO - Executing: [get element size: 23 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@8fee96de] at URL: /session/1451728860030/element/23/size)
-11:01:03.858 INFO - Done: /session/1451728860030/element/23/size
-11:01:03.864 INFO - Executing: [delete session: 1451728860030] at URL: /session/1451728860030)
-11:01:04.428 INFO - Done: /session/1451728860030
+14:55:23.937 INFO - Done: /session
+14:55:23.949 INFO - Executing: org.openqa.selenium.remote.server.handler.GetSessionCapabilities@645190e7 at URL: /session/1452520521904)
+14:55:23.950 INFO - Done: /session/1452520521904
+14:55:23.962 INFO - Executing: [set window size] at URL: /session/1452520521904/window/current/size)
+14:55:24.243 INFO - Done: /session/1452520521904/window/current/size
+14:55:24.247 INFO - Executing: [get: http://localhost:4000/test/stylus] at URL: /session/1452520521904/url)
+14:55:24.989 INFO - Done: /session/1452520521904/url
+14:55:25.003 INFO - Executing: [find elements: By.selector: body] at URL: /session/1452520521904/elements)
+14:55:25.039 INFO - Done: /session/1452520521904/elements
+14:55:25.043 INFO - Executing: [is displayed: 0 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@e2d9286b] at URL: /session/1452520521904/element/0/displayed)
+14:55:25.053 INFO - Done: /session/1452520521904/element/0/displayed
+14:55:25.059 INFO - Executing: [set window size] at URL: /session/1452520521904/window/current/size)
+14:55:25.182 INFO - Done: /session/1452520521904/window/current/size
+14:55:25.186 INFO - Executing: [get title] at URL: /session/1452520521904/title)
+14:55:25.192 INFO - Done: /session/1452520521904/title
+14:55:25.204 INFO - Executing: [set window size] at URL: /session/1452520521904/window/current/size)
+14:55:25.317 INFO - Done: /session/1452520521904/window/current/size
+14:55:25.321 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1452520521904/elements)
+14:55:25.336 INFO - Done: /session/1452520521904/elements
+14:55:25.340 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@e2d9286c, box-sizing] at URL: /session/1452520521904/element/1/css/box-sizing)
+14:55:25.348 INFO - Done: /session/1452520521904/element/1/css/box-sizing
+14:55:25.351 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1452520521904/elements)
+14:55:25.364 INFO - Done: /session/1452520521904/elements
+14:55:25.367 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@e2d9286c, display] at URL: /session/1452520521904/element/1/css/display)
+14:55:25.374 INFO - Done: /session/1452520521904/element/1/css/display
+14:55:25.377 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1452520521904/elements)
+14:55:25.385 INFO - Done: /session/1452520521904/elements
+14:55:25.391 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@e2d9286c, flex-direction] at URL: /session/1452520521904/element/1/css/flex-direction)
+14:55:25.398 INFO - Done: /session/1452520521904/element/1/css/flex-direction
+14:55:25.402 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1452520521904/elements)
+14:55:25.420 INFO - Done: /session/1452520521904/elements
+14:55:25.423 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@e2d9286c, justify-content] at URL: /session/1452520521904/element/1/css/justify-content)
+14:55:25.431 INFO - Done: /session/1452520521904/element/1/css/justify-content
+14:55:25.434 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1452520521904/elements)
+14:55:25.443 INFO - Done: /session/1452520521904/elements
+14:55:25.447 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@e2d9286c, flex-wrap] at URL: /session/1452520521904/element/1/css/flex-wrap)
+14:55:25.454 INFO - Done: /session/1452520521904/element/1/css/flex-wrap
+14:55:25.458 INFO - Executing: [find elements: By.selector: .jg-row] at URL: /session/1452520521904/elements)
+14:55:25.465 INFO - Done: /session/1452520521904/elements
+14:55:25.469 INFO - Executing: [get value of css property: 1 org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement@e2d9286c, width] at URL: /session/1452520521904/element/1/css/width)
+14:55:25.477 INFO - Done: /session/1452520521904/element/1/css/width
+14:55:25.484 INFO - Executing: [delete session: 1452520521904] at URL: /session/1452520521904)
+14:55:26.055 INFO - Done: /session/1452520521904

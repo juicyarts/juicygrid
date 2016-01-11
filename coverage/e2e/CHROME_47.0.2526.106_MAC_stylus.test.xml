@@ -4,17 +4,17 @@
             tests="3">
 
   <testsuite name="stylus.test"
-    errors="0" failures="1" hostname="" id="" package="stylus.test" skipped="0"
-    tests="3" time="4.231" timestamp="Sat, 02 Jan 2016 10:01:00 GMT">
+    errors="0" failures="1" hostname="" id="" package="stylus.test" skipped="1"
+    tests="3" time="3.927" timestamp="Mon, 11 Jan 2016 13:55:22 GMT">
   
-    <testcase name="Stylus Tests: General" time="2.873" assertions="2">
+    <testcase name="Stylus Tests: General" time="3.064" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Stylus Tests: Jg-Row Tests" time="0.4830" assertions="8">
+    <testcase name="Stylus Tests: Jg-Row Tests" time="0.8630" assertions="6">
 
     
 
@@ -24,30 +24,27 @@
 
     
 
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Stylus Tests: Jg-row-1-22 jg-col-1-22 Large" time="0.8750" assertions="1">  <failure message="Failed [equal]: (91 == 1100.0075757575755)">Failed [equal]: (91 == 1100.0075757575755): Failed [equal]: (91 == 1100.0075757575755) - Expected &quot;1100.0075757575755&quot; but got: &quot;91&quot;
-    at Object.equal (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/core/api.js:67:24)
-    at Object.&lt;anonymous&gt; (/Users/huess/www/juicyarts/tools/juicygrid/test/e2e/stylus.test.js:47:19)
-    at Object.&lt;anonymous&gt; (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/api/element-commands.js:360:20)
-    at HttpRequest.&lt;anonymous&gt; (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/index.js:322:20)
-    at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/index.js:351:15)
-    at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/http/request.js:155:16)
-    at IncomingMessage.emit (events.js:129:20)
-    at _stream_readable.js:908:16</failure>
+      <failure message="Expected element &lt;.jg-row&gt; to have css property &quot;width&quot; which equals: &quot;1201px&quot;">    at Object.module.exports.Stylus Tests: Jg-Row Tests (/Users/huess/www/juicyarts/tools/juicygrid/test/e2e/stylus.test.js:22:18)
+    at Module.call (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (node.js:355:11)</failure>
 
     
     </testcase>
   
+  
+    
+    <testcase
+      name="Stylus Tests: Jg-row-1-22 jg-col-1-22 Large">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>
