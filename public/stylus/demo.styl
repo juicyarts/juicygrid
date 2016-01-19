@@ -8,35 +8,33 @@ $color_5 = #D1DC48
 *
 	margin 0
 	padding 0
-
-.jg-row
-	background whitesmoke
-	
-	.jg-col
-		background blue
-		&:nth-child(2n+1)
-			background green
-		&:nth-child(1)
-			background $color_1
-		&:nth-child(2)
-			background $color_2	
-		&:nth-child(3)
-			background $color_5
-		&:nth-child(4)
-			background $color_4	
-		&:nth-child(5)
-			background $color_5	
-		
-			
-	&:nth-child(2n+1)
+#wfb-content
+	.jg-row
 		.jg-col
-			&:nth-child(5)
+			background blue
+			&:nth-child(2n+1)
+				background green
+			&:nth-child(1)
 				background $color_1
-			&:nth-child(4)
+			&:nth-child(2)
 				background $color_2	
 			&:nth-child(3)
 				background $color_5
-			&:nth-child(2)
+			&:nth-child(4)
 				background $color_4	
-			&:nth-child(1)
+			&:nth-child(5)
 				background $color_5	
+			
+				
+		&:nth-child(2n+1)
+			.jg-col
+				&:nth-child(5)
+					background $color_1
+				&:nth-child(4)
+					background $color_2	
+				&:nth-child(3)
+					background $color_5
+				&:nth-child(2)
+					background $color_4	
+				&:nth-child(1)
+					background $color_5	

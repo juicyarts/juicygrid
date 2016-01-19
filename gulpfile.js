@@ -26,7 +26,7 @@ gulp.task('env:test', function() {
 gulp.task('default', ['env:dev', 'sync', 'stylus', 'watch'], function() {});
 
 gulp.task('watch', function() {
-	gulp.watch('./public/stylus/*.styl', ['stylus']);
+	gulp.watch('./public/stylus/**/*.styl', ['stylus']);
 });
 // test
 gulp.task('test', function() {
@@ -39,7 +39,7 @@ gulp.task('build', ['env:prod', 'stylus', 'less', 'sass', 'mv'], function() {});
 
 // server 
 gulp.task('sync', ['nodemon'], function() {
-	bs.init(null, {
+	bs({
 		proxy: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'http://localhost:3001',
 		files: ['public/**/*.*'],
 		browser: 'google chrome',
@@ -74,10 +74,10 @@ gulp.task('stylus:lint', function() {
 });
 
 gulp.task('stylus:compile', function() {
-	return gulp.src('./public/stylus/juicy-grid.styl')
+	return gulp.src(['./public/stylus/juicy-grid.styl', './public/stylus/wfb-grid.styl'])
 		.pipe(plugins.stylus({
 			use: nib(),
-			compress: process.env.NODE_ENV === 'development' ? false : true
+			compress: true
 		}))
 		.on('error', function(err) {
 			plugins.util.log(plugins.util.colors.white.bgRed(' ! error occurred compiling stylus file '));

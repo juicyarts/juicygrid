@@ -1,0 +1,72 @@
+@import 'juicy-grid'
+@import 'demo'
+@import 'nib'
+
+$mobile_header_bg = #505050
+$mobile_header_height = 50px
+$mobile_header_color = white
+$desktop_header_height = 120px
+
+$nav_bg = linear-gradient(top, #FEFEFE, #F0F0F0)
+$nav_color = rgba(9, 88, 158, 1)
+$nav_bg_active = rgba(0, 74, 136, 1)
+$nav_color_active = #f8b64b
+$nav_fs = 13px
+$nav_fw = bold
+
+$sub_nav_bg = linear-gradient(top, rgba(0, 74, 136, 1), rgba(9, 88, 158, 1))
+$sub_nav_color = white
+$sub_nav_bg_active = rgba(0, 74, 136, 1)
+$sub_nav_color_active = #f8b64b
+$sub_nav_fs = 13px
+$sub_nav_fw = normal
+
+$nav_tooltip_bg = rgba(255, 255, 255, 0.8)
+$nav_tooltip_color = #000
+$nav_tooltip_fs = 11px
+$nav_tooltip_fw = normal
+
+@import 'wfb/**'
+
+*
+	margin 0
+	padding 0
+	outline none
+	border 0
+	font-size 100%
+	font-family 'Open sans', Helvetica, Arial, sans-serif
+	list-style-type none
+	text-decoration none
+	user-select none
+
+.mdi
+	font-size 30px
+	
+body
+	background #daeafb
+	width 100%
+	position relative
+	float left
+	clear both
+	@media screen and (max-width $bp_m)
+		&.viewMenu
+			#wfb-header	
+				transform translate3d(70%, 0, 0)
+			#wfb-navigation
+				transform translate3d(0%, 0, 0)
+			#wfb-content
+				opacity 0.2
+
+#wfb-content
+	z-index 1
+	flex 1
+	overflow hidden
+	overflow-y auto
+	transition opacity .6s cubic-bezier(.19, 1, .22, 1)
+	@media screen and (max-width $bp_m)
+		margin-top $mobile_header_height + 3px
+	
+	.jg-col
+		min-height 100px
+		margin-top $jg_col_gutter
+		
