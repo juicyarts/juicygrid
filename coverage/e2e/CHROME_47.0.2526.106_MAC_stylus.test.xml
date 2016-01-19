@@ -4,17 +4,17 @@
             tests="3">
 
   <testsuite name="stylus.test"
-    errors="0" failures="1" hostname="" id="" package="stylus.test" skipped="1"
-    tests="3" time="3.927" timestamp="Mon, 11 Jan 2016 13:55:22 GMT">
+    errors="0" failures="1" hostname="" id="" package="stylus.test" skipped="0"
+    tests="3" time="3.173" timestamp="Tue, 12 Jan 2016 19:22:00 GMT">
   
-    <testcase name="Stylus Tests: General" time="3.064" assertions="2">
+    <testcase name="Stylus Tests: General" time="2.729" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Stylus Tests: Jg-Row Tests" time="0.8630" assertions="6">
+    <testcase name="Stylus Tests: Jg-Row Tests" time="0.4380" assertions="8">
 
     
 
@@ -24,27 +24,18 @@
 
     
 
-      <failure message="Expected element &lt;.jg-row&gt; to have css property &quot;width&quot; which equals: &quot;1201px&quot;">    at Object.module.exports.Stylus Tests: Jg-Row Tests (/Users/huess/www/juicyarts/tools/juicygrid/test/e2e/stylus.test.js:22:18)
-    at Module.call (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/runner/module.js:63:34)
-    at /Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/lib/runner/testcase.js:97:29
-    at _fulfilled (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/huess/www/juicyarts/tools/juicygrid/node_modules/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (node.js:355:11)</failure>
+    
+
+    
+
+    
 
     
     </testcase>
   
-  
-    
-    <testcase
-      name="Stylus Tests: Jg-row-1-22 jg-col-1-22 Large">
-      <skipped />
+    <testcase name="Stylus Tests: Jg-row-1-12 jg-col-1-12 Large" time="0.006000" assertions="0">
     </testcase>
-    
+  
   
   </testsuite>
 </testsuites>
